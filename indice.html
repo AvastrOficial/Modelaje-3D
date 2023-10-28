@@ -1,0 +1,45 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="menu" id="menu">
+     <h3>Cambia la rotacion : </h3>
+    <input type="text" id="inputValue" placeholder="Escribe un numero" />
+       <h3>Cambia el color :</h3>
+    <input type="color" id="colorPicker" value="#000000" />
+     <h3>Elimina las caras :</h3>
+    <div class="buttons">
+    <button class="round-button" onclick="toggleVisibility('front')">1</button>
+    <button class="round-button" onclick="toggleVisibility('back')">2</button>
+    <button class="round-button" onclick="toggleVisibility('left')">3</button>
+    <button class="round-button" onclick="toggleVisibility('right')">4</button>
+</div>
+     
+</div>
+  
+  
+  <div class="configuracion"></div>
+  
+
+     <div class="container">
+        <div class="pyramid" id="pyramid">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face bottom"></div>
+        </div>
+    </div>
+
+     
+   
+
+     
+    <script src="script.js"></script>
+</body>
+</html>
