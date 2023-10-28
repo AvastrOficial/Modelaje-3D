@@ -11,6 +11,9 @@ En resumen, este código crea una experiencia interactiva en una página web que
 
 
 Modelo de pantalla de inicio 
+
+codigo en : https://codepen.io/AvastrOficial/pen/yLZeMLa 
+
 ![image](https://github.com/AvastrOficial/Modelaje-3D/assets/91764815/f9e38958-5593-442d-92ce-b9d15a66d292)
 
 Al configurar el menu podemos mover la velocidad y el color 
