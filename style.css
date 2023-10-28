@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://files.catbox.moe/7ey4f8.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    perspective: 1200px;
+}
+
+.pyramid {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite;
+  
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.6);
+    border: 1px solid #333;
+}
+
+.front {
+    transform: translateZ(50px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.bottom {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+body, html {
+    color: black;
+    background-color: black;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 60px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    left: 10px; /* Ajusta la distancia desde la izquierda según sea necesario */
+    transform: translateY(0%);
+    text-align: center;
+    width: 240px;
+    height: 360px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.5s ease; /* Agregamos una transición suave */
+    transform: translateX(-250px); /* Ocultamos inicialmente el menú fuera de la pantalla */
+}
+
+
+
+#inputValue {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  width: 150px;
+}
+
+#colorPicker {
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.configuracion {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://files.catbox.moe/nocq3h.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.round-button {
+    border: none;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; /* Ajusta el valor para centrar verticalmente el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.round-button:hover {
+    background-color: #0056b3;
+}
+
